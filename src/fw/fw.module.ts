@@ -12,7 +12,7 @@ import {ScreenLargeDirective} from './directives/screen-large.directive';
 import {ClubsService} from './clubs/clubs.service';
 import {ClubsListComponent} from './clubs/clubs-list.component';
 import {ClubsDetailComponent} from './clubs/clubs-detail.component';
-import {EventsService} from './events/events.service';
+// import {EventsService} from './events/events.service';
 import {SubscriptionsComponent} from './subscriptions/subscriptions.component';
 import {EventsComponent} from './events/events.component';
 

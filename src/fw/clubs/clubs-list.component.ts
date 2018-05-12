@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {IClub} from './club';
 import {ClubsService} from './clubs.service';
+import { Socket } from 'ng-socket-io';
 
 @Component({
   selector: 'app-clubs',
@@ -17,26 +18,26 @@ export class ClubsListComponent implements OnInit {
   clubs: IClub[] = [
     {
       "clubId": 1,
-      "name" : "Chelsie",
+      "name" : "Russia",
       "imgSrc": "../assets/images/chelsi.jpg"
     },
     {
       "clubId": 2,
-      "name" : "Arsenal",
+      "name" : "Uruguay",
       "imgSrc": "../assets/images/aresenal.jpg"
     },
     {
       "clubId": 3,
-      "name" : "Manchestur",
+      "name" : "Egypt",
       "imgSrc": "../assets/images/manchestur.jpg"
     },
     {
       "clubId": 4,
-      "name" : "Manchestur United",
+      "name" : "Tunissia",
       "imgSrc": "../assets/images/manchesturUnited.jpg"
     },
   ];
-
+    
   ngOnInit(): void {
     // this._clubService.getClubs().subscribe(clubs => {
     //     this.clubs = clubs;
@@ -46,10 +47,23 @@ export class ClubsListComponent implements OnInit {
 
   }
 
-  subscribe(): void {
-    return alert('You have successfuly subscribed to this team events');
+  subscribe(id:number): void {
+    this.clubs[id].isSubscribed != this.clubs[id].isSubscribed;
   }
 
-  constructor(private _clubService: ClubsService) {
+  constructor(private _clubService: ClubsService, private socket:Socket) {
+    console.log('socket init');
+    this.socket.on('event', (e)=>{
+      if(e.type==='GOAL') {
+        console.log(e);
+        if(e.nationalTeam) {
+          let scoringClub = this.clubs.find(({name}) => true|| e.nationalTeam.name === name)
+          if(scoringClub) {
+            scoringClub.event = `${e.player.firstName} ${e.player.lastName} SCORED`;
+            console.log(scoringClub.event);
+          }
+        }
+      }
+    });
   }
 }
