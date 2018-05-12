@@ -1,1 +1,3 @@
-<app-clubs></app-clubs>
+<app-clubs *ngIf="router.url == '/clubs'"></app-clubs>
+<fw-subscriptions *ngIf="router.url == '/subscriptions'"></fw-subscriptions>
+<fw-events *ngIf="router.url == '/subscriptions/events'"></fw-events>
