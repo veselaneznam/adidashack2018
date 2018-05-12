@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {IEvent} from './event';
+import {IClub} from '../clubs/club';
 
 @Component({
   selector: 'app-events',
@@ -8,9 +9,13 @@ import {IEvent} from './event';
 })
 export class EventDetailComponent implements OnInit {
 
-  events: IEvent =[
-    {}
-  ];
+  event: IEvent =
+    {
+      "eventId": 1,
+      "eventName" : "Chelsie",
+      "isLive": true,
+      "imgSrc" : ''
+    };
 
   constructor() { }
 

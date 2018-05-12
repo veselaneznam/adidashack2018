@@ -28,7 +28,7 @@ export class SubscriptionsComponent implements OnInit {
   }
 
   seeEvents(): void {
-    this._router.navigate(['/events']);
+    this._router.navigate(['subscriptions/events']);
   }
 
 }

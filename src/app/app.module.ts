@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {FwModule} from '../fw/fw.module';
+import {RouterModule} from '@angular/router';
 import {AppRoutingModule} from './routing/app.routing.module';
-import {ClubsRoutingModule} from './routing/clubs.routing.module';
 import {HttpClientModule} from '@angular/common/http';
 
 
@@ -21,7 +21,7 @@ import {HttpClientModule} from '@angular/common/http';
     HttpModule,
     HttpClientModule,
     FwModule,
-    ClubsRoutingModule,
+    RouterModule,
     AppRoutingModule,
   ],
   providers: [],

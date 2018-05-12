@@ -15,11 +15,13 @@ import {ClubsDetailComponent} from './clubs/clubs-detail.component';
 import {EventsService} from './events/events.service';
 import {SubscriptionsComponent} from './subscriptions/subscriptions.component';
 import {EventsComponent} from './events/events.component';
+import {RouterModule} from '@angular/router';
 
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   declarations: [
     FrameworkBodyComponent,
@@ -37,8 +39,9 @@ import {EventsComponent} from './events/events.component';
   providers: [
     FrameworkConfigService,
     ScreenService,
-    ClubsService
+    ClubsService,
+    EventsService
   ],
-  exports: [FrameworkBodyComponent, ClubsListComponent]
+  exports: [FrameworkBodyComponent, ClubsListComponent, SubscriptionsComponent, EventsComponent]
 })
 export class FwModule { }

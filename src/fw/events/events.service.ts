@@ -4,11 +4,10 @@ import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/catch';
-import {IClub} from './club';
 import {IEvent, IFanFeed, ILiveFeed} from './event';
 
 @Injectable()
-export class ClubsService {
+export class EventsService {
   private _eventUrl = './api/events/events.json';
 
   constructor(private  _http: HttpClient) {}

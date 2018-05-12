@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {IEvent} from './event';
 
 @Component({
-  selector: 'app-events',
+  selector: 'fw-events',
   templateUrl: './events.component.html',
   styleUrls: ['./events.component.css']
 })
