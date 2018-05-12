@@ -13,7 +13,7 @@ import {ClubsDetailComponent} from '../../fw/clubs/clubs-detail.component';
     RouterModule.forRoot([
       { path: 'clubs', component: ClubsListComponent },
       { path: 'subscriptions', component: SubscriptionsComponent },
-      { path: 'subscriptions/events', component: EventsComponent },
+      { path: 'subscriptions/events/:id', component: EventsComponent },
       { path: 'clubs/:id', component: ClubsDetailComponent },
       { path: '', redirectTo : 'welcome', pathMatch: 'full'},
       { path: '**', redirectTo : 'welcome', pathMatch: 'full'},

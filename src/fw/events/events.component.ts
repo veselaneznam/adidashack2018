@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {IEvent} from './event';
+import { IEvent } from './event';
+import { Socket } from 'ng-socket-io';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'fw-events',
@@ -23,7 +25,19 @@ export class EventsComponent implements OnInit {
     },
   ];
 
-  constructor() { }
+  constructor(private socket: Socket, private route: ActivatedRoute) {
+    this.socket.on('event', (e) => {
+      if (e.nationalTeam && e.nationalTeam.id === this.route.snapshot.paramMap.get('id') && e.type === 'GOAL') {
+        console.log(e);
+        let event = this.events.find(({ eventName }) => e.nationalTeam.name === eventName)
+        if (event) {
+          event.eventName = `${e.player.firstName} ${e.player.lastName} SCORED`;
+          // console.log(scoringClub.event);
+        }
+      }
+    });
+  }
+
 
   ngOnInit() {
   }
