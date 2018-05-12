@@ -12,7 +12,7 @@ export class EventDetailComponent implements OnInit {
   event: IEvent =
     {
       "eventId": 1,
-      "eventName" : "Chelsie",
+      "eventName" : "Chelsea",
       "isLive": true,
       "imgSrc" : ''
     };

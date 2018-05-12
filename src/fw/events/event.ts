@@ -1,6 +1,6 @@
 export interface IEvent {
   eventId: number;
-  eventName: number;
+  eventName: string;
   isLive: boolean;
   imgSrc: string;
 }
