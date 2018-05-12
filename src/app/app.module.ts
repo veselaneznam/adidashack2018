@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {FwModule} from '../fw/fw.module';
-import { ContentComponent } from '../fw/content/content.component';
+import {AppRoutingModule} from './routing/app.routing.module';
+import {ClubsRoutingModule} from './routing/clubs.routing.module';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -17,7 +19,10 @@ import { ContentComponent } from '../fw/content/content.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    FwModule
+    HttpClientModule,
+    FwModule,
+    ClubsRoutingModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,6 +9,12 @@ import {StatusBarComponent} from './status-bar/status-bar.component';
 import {ScreenService} from './services/screen.service';
 import {ScreenBelowLargeDirective} from './directives/screen-below-large.directive';
 import {ScreenLargeDirective} from './directives/screen-large.directive';
+import {ClubsService} from './clubs/clubs.service';
+import {ClubsListComponent} from './clubs/clubs-list.component';
+import {ClubsDetailComponent} from './clubs/clubs-detail.component';
+import {EventsService} from './events/events.service';
+import {SubscriptionsComponent} from './subscriptions/subscriptions.component';
+import {EventsComponent} from './events/events.component';
 
 
 @NgModule({
@@ -22,12 +28,17 @@ import {ScreenLargeDirective} from './directives/screen-large.directive';
     TopBarComponent,
     StatusBarComponent,
     ScreenBelowLargeDirective,
-    ScreenLargeDirective
+    ScreenLargeDirective,
+    ClubsListComponent,
+    ClubsDetailComponent,
+    SubscriptionsComponent,
+    EventsComponent
   ],
   providers: [
     FrameworkConfigService,
-    ScreenService
+    ScreenService,
+    ClubsService
   ],
-  exports: [FrameworkBodyComponent]
+  exports: [FrameworkBodyComponent, ClubsListComponent]
 })
 export class FwModule { }

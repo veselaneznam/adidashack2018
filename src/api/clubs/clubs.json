@@ -1,0 +1,22 @@
+[
+  {
+    "clubId": 1,
+    "name" : "Chelsie",
+    "imgSrc": "assets/images/chelsi.jpg"
+  },
+  {
+    "clubId": 2,
+    "name" : "Arsenal",
+    "imgSrc": "assets/images/chelsi.jpg"
+  },
+  {
+    "clubId": 3,
+    "name" : "Manchestur",
+    "imgSrc": "assets/images/manchestur.jpg"
+  },
+  {
+    "clubId": 4,
+    "name" : "Manchestur United",
+    "imgSrc": "assets/images/manchesturUnited.jpg"
+  },
+]

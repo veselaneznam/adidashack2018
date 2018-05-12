@@ -2,16 +2,19 @@
   <span class="glyphicon glyphicon-menu-hamburger"></span>
   <div class="small-image-holder"></div>
   <div class="menu-area">
-    <img class="small-image" src="../assets/logo.png" alt="Green Nations Logo">
   </div>
   <span class="glyphicon glyphicon-option-vertical"></span>
 
 </div>
 
-<div *screenLarge class="title-bar user-title-bar">
-  <img src="../assets/logo.png" alt="Green Nations Logo">
-  <div class="menu-area">
-    <fw-top-bar>
-    </fw-top-bar>
-  </div>
-</div>
+<nav *screenLarge class="navbar title-bar user-title-bar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <fw-top-bar></fw-top-bar>
+
