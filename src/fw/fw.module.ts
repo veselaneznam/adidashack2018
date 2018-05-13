@@ -16,6 +16,7 @@ import {EventsService} from './events/events.service';
 import {SubscriptionsComponent} from './subscriptions/subscriptions.component';
 import {EventsComponent} from './events/events.component';
 import {RouterModule} from '@angular/router';
+import {EventDetailComponent} from './events/event-detail.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import {RouterModule} from '@angular/router';
     ClubsListComponent,
     ClubsDetailComponent,
     SubscriptionsComponent,
-    EventsComponent
+    EventsComponent,
+    EventDetailComponent
   ],
   providers: [
     FrameworkConfigService,
@@ -42,6 +44,6 @@ import {RouterModule} from '@angular/router';
     ClubsService,
     EventsService
   ],
-  exports: [FrameworkBodyComponent, ClubsListComponent, SubscriptionsComponent, EventsComponent]
+  exports: [FrameworkBodyComponent, ClubsListComponent, SubscriptionsComponent, EventsComponent, EventDetailComponent]
 })
 export class FwModule { }

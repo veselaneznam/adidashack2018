@@ -2,7 +2,7 @@
   <div class="row">
     <div *ngIf='events && events.length' class="row">
       <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <h1 class="gallery-title">Clubs</h1>
+        <h1 class="gallery-title">Events </h1>
       </div>
       <div *ngFor="let event of events" class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
         <a class="thumbnail"><img [src]='event.imgSrc' class="img-responsive"><span>
@@ -11,7 +11,7 @@
           <span *ngIf="event.isLive">
           <button style="background: green; color: white; float: right" >Live</button> </span>
           <span style="float: right">
-          <button style="background: #e90052; color: white" (click)="participate()" >Participate</button>
+          <button style="background: #e90052; color: white" (click)="participate(event.eventId)" >Participate</button>
         </span></a>
       </div>
     </div>
