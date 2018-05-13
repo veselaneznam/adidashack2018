@@ -52,6 +52,27 @@ export class ClubsListComponent implements OnInit {
       "imgSrc": "../assets/images/uruguay.jpg"
     },
   ];
+
+  clubs2: IClub[] = [
+    {
+      "clubId": 50,
+      "imgResultSrc": "../assets/images/chelsi.jpg",
+      "name" : "Lakers",
+      "imgSrc": "../assets/images/team3.jpg"
+    },
+    {
+      "clubId": 51,
+      "name" : "West",
+      "imgResultSrc": "../assets/images/chelsi.jpg",
+      "imgSrc": "../assets/images/team2.jpg"
+    },
+    {
+      "clubId": 52,
+      "name" : "Bulls",
+      "imgResultSrc": "../assets/images/chelsi.jpg",
+      "imgSrc": "../assets/images/team1.jpg"
+    },
+  ];
     
   ngOnInit(): void {
     // this._clubService.getClubs().subscribe(clubs => {
