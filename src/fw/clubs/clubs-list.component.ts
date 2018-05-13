@@ -19,37 +19,37 @@ export class ClubsListComponent implements OnInit {
       "clubId": 15,
       "imgResultSrc": "../assets/images/chelsi.jpg",
       "name" : "Colombia",
-      "imgSrc": "../assets/images/chelsi.jpg"
+      "imgSrc": "../assets/images/columbia.png"
     },
     {
       "clubId": 8,
       "name" : "Japan",
       "imgResultSrc": "../assets/images/chelsi.jpg",
-      "imgSrc": "../assets/images/aresenal.jpg"
+      "imgSrc": "../assets/images/japan.png"
     },
     {
       "clubId": 16,
-      "name" : "Polad",
+      "name" : "Poland",
       "imgResultSrc": "../assets/images/chelsi.jpg",
-      "imgSrc": "../assets/images/manchestur.jpg"
+      "imgSrc": "../assets/images/poland.png"
     },
     {
       "clubId": 6,
       "name" : "Senegal",
       "imgResultSrc": "../assets/images/chelsi.jpg",
-      "imgSrc": "../assets/images/manchesturUnited.jpg"
+      "imgSrc": "../assets/images/senegal.png"
     },
     {
       "clubId": 18,
       "name" : "Portugal",
       "imgResultSrc": "../assets/images/chelsi.jpg",
-      "imgSrc": "../assets/images/manchesturUnited.jpg"
+      "imgSrc": "../assets/images/portugal.png"
     },
     {
       "clubId": 19,
       "name" : "Uruguay",
       "imgResultSrc": "../assets/images/chelsi.jpg",
-      "imgSrc": "../assets/images/manchesturUnited.jpg"
+      "imgSrc": "../assets/images/uruguay.jpg"
     },
   ];
     
