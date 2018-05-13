@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IEvent } from './event';
 import { Socket } from 'ng-socket-io';
-import { ActivatedRoute } from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'fw-events',
@@ -15,17 +15,21 @@ export class EventsComponent implements OnInit {
       eventId: 1,
       eventName: 'Match',
       isLive: true,
-      imgSrc: ''
+      imgSrc: '../assets/images/chelsie-event.jpg'
     },
     {
       eventId: 2,
       eventName: 'Match 2',
       isLive: false,
-      imgSrc: ''
+      imgSrc: '../assets/images/chelsie-event.jpg'
     },
   ];
 
-  constructor(private route: ActivatedRoute, private socket: Socket) {
+  constructor(private socket: Socket, private route: ActivatedRoute, private _router: Router) {
+  }
+
+
+  ngOnInit() {
     this.socket.on('event', (e) => {
       if (e.nationalTeam && e.nationalTeam.id === this.route.snapshot.paramMap.get('id') && e.type === 'GOAL') {
         console.log(e);
@@ -38,11 +42,7 @@ export class EventsComponent implements OnInit {
     });
   }
 
-
-  ngOnInit() {
-  }
-
-  participate(): void {
-
+  participate(eventId): void {
+    this._router.navigate([`subscriptions/event-detail/${eventId}`]);
   }
 }

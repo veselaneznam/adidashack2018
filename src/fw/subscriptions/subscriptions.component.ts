@@ -156,6 +156,10 @@ export class SubscriptionsComponent implements OnInit {
   ];
   constructor(private _route: ActivatedRoute,
     private _router: Router, private socket: Socket) {
+
+  }
+
+  ngOnInit() {
     this.socket.on('event', (e) => {
       if (e.nationalTeam && e.type === 'GOAL') {
         let club = this.clubs.find(({ name }) => e.nationalTeam.name === name)
@@ -166,9 +170,6 @@ export class SubscriptionsComponent implements OnInit {
         }
       }
     });
-  }
-
-  ngOnInit() {
   }
 
   seeEvents(clubId): void {

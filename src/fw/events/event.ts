@@ -8,10 +8,12 @@ export interface IEvent {
 export interface ILiveFeed {
   feedType: string;
   feedImage: string;
+  likes: number;
 }
 
 export interface IFanFeed {
   feedType: string;
   feedImage: string;
   points: number;
+  likes: number;
 }
