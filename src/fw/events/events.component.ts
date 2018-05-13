@@ -25,7 +25,7 @@ export class EventsComponent implements OnInit {
     },
   ];
 
-  constructor(private socket: Socket, private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute, private socket: Socket) {
     this.socket.on('event', (e) => {
       if (e.nationalTeam && e.nationalTeam.id === this.route.snapshot.paramMap.get('id') && e.type === 'GOAL') {
         console.log(e);

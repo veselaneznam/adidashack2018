@@ -17,32 +17,38 @@ export class ClubsListComponent implements OnInit {
   clubs: IClub[] = [
     {
       "clubId": 15,
+      "imgResultSrc": "../assets/images/chelsi.jpg",
       "name" : "Colombia",
       "imgSrc": "../assets/images/chelsi.jpg"
     },
     {
       "clubId": 8,
       "name" : "Japan",
+      "imgResultSrc": "../assets/images/chelsi.jpg",
       "imgSrc": "../assets/images/aresenal.jpg"
     },
     {
       "clubId": 16,
       "name" : "Polad",
+      "imgResultSrc": "../assets/images/chelsi.jpg",
       "imgSrc": "../assets/images/manchestur.jpg"
     },
     {
       "clubId": 6,
       "name" : "Senegal",
+      "imgResultSrc": "../assets/images/chelsi.jpg",
       "imgSrc": "../assets/images/manchesturUnited.jpg"
     },
     {
       "clubId": 18,
       "name" : "Portugal",
+      "imgResultSrc": "../assets/images/chelsi.jpg",
       "imgSrc": "../assets/images/manchesturUnited.jpg"
     },
     {
       "clubId": 19,
       "name" : "Uruguay",
+      "imgResultSrc": "../assets/images/chelsi.jpg",
       "imgSrc": "../assets/images/manchesturUnited.jpg"
     },
   ];
