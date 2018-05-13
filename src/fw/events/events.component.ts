@@ -13,15 +13,15 @@ export class EventsComponent implements OnInit {
   events = [
     {
       eventId: 1,
-      eventName: 'Match',
+      eventName: 'Egytp Uruguay',
       isLive: true,
-      imgSrc: '../assets/images/chelsie-event.jpg'
+      imgSrc: '../assets/images/newcastle.jpg'
     },
     {
       eventId: 2,
-      eventName: 'Match 2',
+      eventName: 'Russia Brasil',
       isLive: false,
-      imgSrc: '../assets/images/chelsie-event.jpg'
+      imgSrc: '../assets/images/totenham.jpg'
     },
   ];
 

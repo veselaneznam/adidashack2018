@@ -11,13 +11,15 @@
           <div>
             <img [src]='club.imgResultSrc' class="img-responsive"/>
           </div>
-          <span>
+          <span style="font-size: 20px">
+            <br>
               {{club.name}}
+              <br>
             </span>
             <div>
               {{club.event}}
             </div>
-          <span style="float: right">
+          <span>
             <button style="background: #e90052; color: white" (click)="seeEvents(club.clubId)">See Events</button>
           </span>
         </a>

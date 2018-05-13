@@ -14,9 +14,9 @@ export class EventDetailComponent implements OnInit {
   event: IEvent =
     {
       'eventId': 1,
-      'eventName': 'Chelsea',
+      'eventName': 'Russia Brasil',
       'isLive': true,
-      'imgSrc': '../assets/images/chelsie-event.jpg',
+      'imgSrc': '../assets/images/RussiaBrazil.png',
     };
 
 
@@ -32,17 +32,17 @@ export class EventDetailComponent implements OnInit {
     }
 ];
 
-eventFanFeeds: IFanFeed[] = [{
-  "feedType": "GOAL!!!",
-"feedImage": "../assets/images/goal.jpg",
-  "likes": 20,
-},
-{
-  "feedType": "WIN",
-  "feedImage": "../assets/images/win.jpg",
-  "likes": 20,
-}
-];
+// eventFanFeeds: IFanFeed[] = [{
+//   "feedType": "GOAL!!!",
+// "feedImage": "../assets/images/goal.jpg",
+//   "likes": 20,
+// },
+// {
+//   "feedType": "WIN",
+//   "feedImage": "../assets/images/win.jpg",
+//   "likes": 20,
+// }
+// ];
 
 constructor(private socket: Socket, private route: ActivatedRoute)
 {
