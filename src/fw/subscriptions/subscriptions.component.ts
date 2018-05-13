@@ -12,55 +12,85 @@ export class SubscriptionsComponent implements OnInit {
 
   clubs: IClub[] = [
     {
-      "clubId": 1,"imgResultSrc": "../assets/images/chelsi.jpg",
-      "name": 'Russia', "imgSrc": "../assets/images/chelsi.jpg",
+      "clubId": 15,
+      "imgResultSrc": "../assets/images/bournemounth.jpg",
+      "name" : "Colombia",
+      "imgSrc": "../assets/images/columbia.png"
     },
     {
-      "clubId": 2,"imgResultSrc": "../assets/images/chelsi.jpg",
-      "name": 'Saudi Arabia', "imgSrc": "../assets/images/chelsi.jpg"
+      "clubId": 8,
+      "name" : "Japan",
+      "imgResultSrc": "../assets/images/aresenal.jpg",
+      "imgSrc": "../assets/images/japan.png"
     },
     {
-      "clubId": 3,"imgResultSrc": "../assets/images/chelsi.jpg",
-      "name": 'Egypt', "imgSrc": "../assets/images/chelsi.jpg"
+      "clubId": 16,
+      "name" : "Poland",
+      "imgResultSrc": "../assets/images/burnley.jpg",
+      "imgSrc": "../assets/images/poland.png"
     },
     {
-      "clubId": 4,"imgResultSrc": "../assets/images/chelsi.jpg",
-      "name": 'Uruguay', "imgSrc": "../assets/images/chelsi.jpg"
+      "clubId": 6,
+      "name" : "Senegal",
+      "imgResultSrc": "../assets/images/chelsi.jpg",
+      "imgSrc": "../assets/images/senegal.png"
     },
     {
-      "clubId": 5,"imgResultSrc": "../assets/images/chelsi.jpg",
+      "clubId": 18,
+      "name" : "Portugal",
+      "imgResultSrc": "../assets/images/crystal_palace.jpg",
+      "imgSrc": "../assets/images/portugal.png"
+    },
+    {
+      "clubId": 19,
+      "name" : "Uruguay",
+      "imgResultSrc": "../assets/images/everton.jpg",
+      "imgSrc": "../assets/images/uruguay.jpg"
+    },
+    {
+      "clubId": 1,"imgResultSrc": "../assets/images/huddersfield.jpg",
+      "name": 'Russia', "imgSrc": "../assets/images/russia.jpg",
+    },
+    {
+      "clubId": 2,"imgResultSrc": "../assets/images/leicer.jpg",
+      "name": 'Saudi Arabia', "imgSrc": "../assets/images/saudi.jpg"
+    },
+    {
+      "clubId": 3,"imgResultSrc": "../assets/images/liverpool.jpg",
+      "name": 'Egypt', "imgSrc": "../assets/images/egypt.jpeg"
+    },
+   
+    {
+      "clubId": 5,"imgResultSrc": "../assets/images/manchesturUnited.jpg",
       "name": 'Morocco', "imgSrc": "../assets/images/chelsi.jpg"
     },
     {
-      "clubId": 6,"imgResultSrc": "../assets/images/chelsi.jpg",
+      "clubId": 6,"imgResultSrc": "../assets/images/newcastle.jpg",
       "name": 'IR Iran', "imgSrc": "../assets/images/chelsi.jpg"
     },
+  
     {
-      "clubId": 7,"imgResultSrc": "../assets/images/chelsi.jpg",
-      "name": 'Portugal', "imgSrc": "../assets/images/chelsi.jpg"
-    },
-    {
-      "clubId": 8,"imgResultSrc": "../assets/images/chelsi.jpg",
+      "clubId": 8,"imgResultSrc": "../assets/images/southhampton.jpg",
       "name": 'Spain', "imgSrc": "../assets/images/chelsi.jpg"
     },
     {
-      "clubId": 9,"imgResultSrc": "../assets/images/chelsi.jpg",
+      "clubId": 9,"imgResultSrc": "../assets/images/stokecity.jpg",
       "name": 'France', "imgSrc": "../assets/images/chelsi.jpg"
     },
     {
-      "clubId": 10,"imgResultSrc": "../assets/images/chelsi.jpg",
+      "clubId": 10,"imgResultSrc": "../assets/images/swansea.jpg",
       "name": 'Australia', "imgSrc": "../assets/images/chelsi.jpg"
     },
     {
-      "clubId": 11,"imgResultSrc": "../assets/images/chelsi.jpg",
+      "clubId": 11,"imgResultSrc": "../assets/images/totenham.jpg",
       "name": 'Argentina', "imgSrc": "../assets/images/chelsi.jpg"
     },
     {
-      "clubId": 12,"imgResultSrc": "../assets/images/chelsi.jpg",
+      "clubId": 12,"imgResultSrc": "../assets/images/watford.jpg",
       "name": 'Iceland', "imgSrc": "../assets/images/chelsi.jpg"
     },
     {
-      "clubId": 13,"imgResultSrc": "../assets/images/chelsi.jpg",
+      "clubId": 13,"imgResultSrc": "../assets/images/westbrom.jpg",
       "name": 'Peru', "imgSrc": "../assets/images/chelsi.jpg"
     },
     {
@@ -70,10 +100,6 @@ export class SubscriptionsComponent implements OnInit {
     {
       "clubId": 15,"imgResultSrc": "../assets/images/chelsi.jpg",
       "name": 'Croatia', "imgSrc": "../assets/images/chelsi.jpg"
-    },
-    {
-      "clubId": 16,"imgResultSrc": "../assets/images/chelsi.jpg",
-      "name": 'Nigeria', "imgSrc": "../assets/images/chelsi.jpg"
     },
     {
       "clubId": 17,"imgResultSrc": "../assets/images/chelsi.jpg",
@@ -127,18 +153,6 @@ export class SubscriptionsComponent implements OnInit {
       "clubId": 29,"imgResultSrc": "../assets/images/chelsi.jpg",
       "name": 'Colombia', "imgSrc": "../assets/images/chelsi.jpg"
     },
-    {
-      "clubId": 30,"imgResultSrc": "../assets/images/chelsi.jpg",
-      "name": 'Japan', "imgSrc": "../assets/images/chelsi.jpg"
-    },
-    {
-      "clubId": 31, "imgResultSrc": "../assets/images/chelsi.jpg",
-      "name": 'Poland', "imgSrc": "../assets/images/chelsi.jpg"
-    },
-    {
-      "clubId": 32,"imgSrc": "../assets/images/chelsi.jpg",
-      "name": 'Senegal', "imgResultSrc": "../assets/images/chelsi.jpg"
-    }
   ];
   constructor(private _route: ActivatedRoute,
     private _router: Router, private socket: Socket) {
